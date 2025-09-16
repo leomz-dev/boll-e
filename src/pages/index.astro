@@ -1,5 +1,8 @@
 ---
-
+	import Nav from "../sections/Nav.astro"
+	import Hero from "../sections/Hero.astro"
+	import About from "../sections/About.astro"
+	import AOSInitializer from "../components/AOSInitializer.astro";
 ---
 
 <html lang="en">
@@ -8,9 +11,19 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Boll-E</title>
+		<link rel="stylesheet" href="/src/styles/global.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="bg-brand-background text-brand-text font-sans">
+
+		<Nav />
+			<!-- Contenido del Hero -->
+		<main class="container mx-auto px-6 pt-16 pb-24 text-center">
+			<Hero />
+			<About />
+		</main>
+		<AOSInitializer client:load />
 	</body>
 </html>
