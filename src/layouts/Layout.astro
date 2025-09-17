@@ -17,15 +17,13 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
-    <!-- Removed: <link rel="stylesheet" href="/styles/global.css" /> -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="bg-brand-background text-brand-text font-sans">
     <Nav />
     <main class="container mx-auto px-6 pt-16 pb-24 text-center">
       <slot />
     </main>
-    <AOSInitializer client:load />
+    <AOSInitializer />
   </body>
 </html>
