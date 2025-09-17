@@ -1,97 +1,103 @@
-<section class="flex flex-col items-center px-4 py-20 bg-white/50">
-    <h1 class="text-5xl md:text-7xl font-serif leading-tight mb-7" data-aos="fade-down">Key Indicators</h1>
+<section class="flex flex-col items-center px-4 py-20 relative">
+    <!-- Background with subtle pattern -->
+    <div class="absolute inset-0 bg-gradient-to-br from-white/60 via-brand-background/30 to-white/60"></div>
+    <div class="absolute inset-0 mesh-bg"></div>
+    
+    <div class="relative z-10 w-full flex flex-col items-center">
+    <h1 class="text-5xl md:text-7xl font-serif leading-tight mb-7 gradient-text" data-aos="fade-down">Key Indicators</h1>
     <div class="w-full flex flex-col items-center space-y-10 max-w-6xl">
         <figure
         class="w-full h-auto flex flex-col md:flex-row items-start p-8 justify-center"
         data-aos="fade-up">
-        <p class="md:w-2/3 text-center font-sans text-lg py-3">Our proven track record speaks for itself. These key performance indicators demonstrate the measurable impact of our AI-powered solutions across Fortune 500 companies and growing enterprises worldwide.</p>
+        <p class="md:w-2/3 text-center font-sans text-lg py-3 opacity-80 hover:opacity-100 transition-opacity duration-300">Our proven track record speaks for itself. These key performance indicators demonstrate the measurable impact of our AI-powered solutions across Fortune 500 companies and growing enterprises worldwide.</p>
         </figure>
 
         <!-- Statistics Grid -->
         <div class="w-full grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div class="text-center" data-aos="fade-up" data-aos-delay="100">
-                <div class="text-5xl font-bold text-brand-primary mb-2">85%</div>
-                <div class="text-lg font-sans">Cost Reduction</div>
+            <div class="text-center group" data-aos="fade-up" data-aos-delay="100">
+                <div class="text-5xl font-bold gradient-text mb-2 group-hover:scale-110 transition-transform duration-300">85%</div>
+                <div class="text-lg font-sans opacity-80 group-hover:opacity-100 transition-opacity">Cost Reduction</div>
             </div>
-            <div class="text-center" data-aos="fade-up" data-aos-delay="200">
-                <div class="text-5xl font-bold text-brand-primary mb-2">99.9%</div>
-                <div class="text-lg font-sans">Accuracy Rate</div>
+            <div class="text-center group" data-aos="fade-up" data-aos-delay="200">
+                <div class="text-5xl font-bold gradient-text mb-2 group-hover:scale-110 transition-transform duration-300">99.9%</div>
+                <div class="text-lg font-sans opacity-80 group-hover:opacity-100 transition-opacity">Accuracy Rate</div>
             </div>
-            <div class="text-center" data-aos="fade-up" data-aos-delay="300">
-                <div class="text-5xl font-bold text-brand-primary mb-2">300%</div>
-                <div class="text-lg font-sans">Efficiency Boost</div>
+            <div class="text-center group" data-aos="fade-up" data-aos-delay="300">
+                <div class="text-5xl font-bold gradient-text mb-2 group-hover:scale-110 transition-transform duration-300">300%</div>
+                <div class="text-lg font-sans opacity-80 group-hover:opacity-100 transition-opacity">Efficiency Boost</div>
             </div>
-            <div class="text-center" data-aos="fade-up" data-aos-delay="400">
-                <div class="text-5xl font-bold text-brand-primary mb-2">24/7</div>
-                <div class="text-lg font-sans">Availability</div>
+            <div class="text-center group" data-aos="fade-up" data-aos-delay="400">
+                <div class="text-5xl font-bold gradient-text mb-2 group-hover:scale-110 transition-transform duration-300">24/7</div>
+                <div class="text-lg font-sans opacity-80 group-hover:opacity-100 transition-opacity">Availability</div>
             </div>
         </div>
 
         <!-- Performance Charts -->
         <div class="w-full flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8">
             <figure
-                class="w-full md:w-1/2 h-auto rounded-2xl shadow-2xl flex flex-col items-start p-8 bg-white"
+                class="w-full md:w-1/2 h-auto rounded-2xl shadow-2xl flex flex-col items-start p-8 glass-effect hover-lift border border-white/20"
                 data-aos="fade-right">
-                <h3 class="text-3xl font-bold font-sans mb-6">Processing Volume</h3>
+                <h3 class="text-3xl font-bold font-sans mb-6 gradient-text">Processing Volume</h3>
                 <div class="w-full space-y-4">
                     <div class="flex justify-between items-center">
-                        <span class="font-sans">Customer Interactions</span>
+                        <span class="font-sans opacity-80">Customer Interactions</span>
                         <span class="font-bold">1M+/day</span>
                     </div>
                     <div class="w-full bg-gray-200 rounded-full h-3">
-                        <div class="bg-brand-primary h-3 rounded-full" style="width: 95%"></div>
+                        <div class="bg-gradient-to-r from-brand-primary to-brand-secondary h-3 rounded-full transition-all duration-1000 hover:shadow-lg" style="width: 95%"></div>
                     </div>
                     
                     <div class="flex justify-between items-center">
-                        <span class="font-sans">Documents Processed</span>
+                        <span class="font-sans opacity-80">Documents Processed</span>
                         <span class="font-bold">500K+/day</span>
                     </div>
                     <div class="w-full bg-gray-200 rounded-full h-3">
-                        <div class="bg-brand-secondary h-3 rounded-full" style="width: 88%"></div>
+                        <div class="bg-gradient-to-r from-brand-secondary to-brand-primary h-3 rounded-full transition-all duration-1000 hover:shadow-lg" style="width: 88%"></div>
                     </div>
                     
                     <div class="flex justify-between items-center">
-                        <span class="font-sans">Financial Transactions</span>
+                        <span class="font-sans opacity-80">Financial Transactions</span>
                         <span class="font-bold">250K+/day</span>
                     </div>
                     <div class="w-full bg-gray-200 rounded-full h-3">
-                        <div class="bg-brand-primary h-3 rounded-full" style="width: 92%"></div>
+                        <div class="bg-gradient-to-r from-purple-500 to-pink-500 h-3 rounded-full transition-all duration-1000 hover:shadow-lg" style="width: 92%"></div>
                     </div>
                 </div>
             </figure>
 
             <figure
-                class="w-full md:w-1/2 h-auto rounded-2xl shadow-2xl flex flex-col items-start p-8 bg-white"
+                class="w-full md:w-1/2 h-auto rounded-2xl shadow-2xl flex flex-col items-start p-8 glass-effect hover-lift border border-white/20"
                 data-aos="fade-left">
-                <h3 class="text-3xl font-bold font-sans mb-6">Client Satisfaction</h3>
+                <h3 class="text-3xl font-bold font-sans mb-6 gradient-text">Client Satisfaction</h3>
                 <div class="w-full space-y-6">
                     <div class="text-center">
-                        <div class="text-6xl font-bold text-brand-primary mb-2">4.9</div>
-                        <div class="text-lg font-sans">Average Rating</div>
+                        <div class="text-6xl font-bold gradient-text mb-2 hover:scale-105 transition-transform duration-300">4.9</div>
+                        <div class="text-lg font-sans opacity-80">Average Rating</div>
                         <div class="flex justify-center space-x-1 mt-2">
-                            <span class="text-yellow-400 text-2xl">★</span>
-                            <span class="text-yellow-400 text-2xl">★</span>
-                            <span class="text-yellow-400 text-2xl">★</span>
-                            <span class="text-yellow-400 text-2xl">★</span>
-                            <span class="text-yellow-400 text-2xl">★</span>
+                            <span class="text-yellow-400 text-2xl hover:scale-125 transition-transform duration-200">★</span>
+                            <span class="text-yellow-400 text-2xl hover:scale-125 transition-transform duration-200">★</span>
+                            <span class="text-yellow-400 text-2xl hover:scale-125 transition-transform duration-200">★</span>
+                            <span class="text-yellow-400 text-2xl hover:scale-125 transition-transform duration-200">★</span>
+                            <span class="text-yellow-400 text-2xl hover:scale-125 transition-transform duration-200">★</span>
                         </div>
                     </div>
                     <div class="space-y-3">
                         <div class="flex justify-between">
-                            <span class="font-sans">Avg Response Time</span>
+                            <span class="font-sans opacity-80">Avg Response Time</span>
                             <span class="font-bold text-green-600">< 15 sec</span>
                         </div>
                         <div class="flex justify-between">
-                            <span class="font-sans">First Call Resolution</span>
+                            <span class="font-sans opacity-80">First Call Resolution</span>
                             <span class="font-bold text-green-600">92.5%</span>
                         </div>
                         <div class="flex justify-between">
-                            <span class="font-sans">Client Retention</span>
+                            <span class="font-sans opacity-80">Client Retention</span>
                             <span class="font-bold text-green-600">97.8%</span>
                         </div>
                     </div>
                 </div>
             </figure>
         </div>
+    </div>
     </div>
 </section>

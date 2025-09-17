@@ -2,23 +2,26 @@
 // src/components/Hero.astro
 ---
 
-<header class="bg-brand-background text-brand-text p-4 rounded-xl">
+<header class="bg-gradient-to-r from-brand-background/80 to-white/80 backdrop-blur-lg text-brand-text p-4 rounded-xl border border-white/20">
   <!-- Navegación -->
-  <nav class="container mx-auto px-6 py-4 border rounded-4xl flex justify-between items-center mt-4">
+  <nav class="container mx-auto px-6 py-4 border border-white/30 rounded-4xl flex justify-between items-center mt-4 glass-effect">
     <div class="flex items-center space-x-8">
-    <a href="#" class="text-2xl font-bold">Boll-E</a>
+    <a href="#" class="text-2xl font-bold gradient-text hover:scale-105 transition-transform duration-300">Boll-E</a>
     <ul class="hidden md:flex items-center space-x-6 text-sm">
-      <li><a href="#" class="text-brand-text pb-1 hover:border-b-2 hover:border-brand-text transition-all duration-100 ease-in-out">About</a></li>
-      <li><a href="#" class="text-brand-text pb-1 hover:border-b-2 hover:border-brand-text transition-all duration-100 ease-in-out">Services</a></li>
-      <li><a href="#" class="text-brand-text pb-1 hover:border-b-2 hover:border-brand-text transition-all duration-100 ease-in-out">Indicators</a></li>
-      <li><a href="#" class="text-brand-text pb-1 hover:border-b-2 hover:border-brand-text transition-all duration-100 ease-in-out">History</a></li>
-      <li><a href="#" class="text-brand-text pb-1 hover:border-b-2 hover:border-brand-text transition-all duration-100 ease-in-out">Science</a></li>
-      <li><a href="#" class="text-brand-text pb-1 hover:border-b-2 hover:border-brand-text transition-all duration-100 ease-in-out">Team</a></li>
-      <li><a href="#" class="text-brand-text pb-1 hover:border-b-2 hover:border-brand-text transition-all duration-100 ease-in-out">Portfolio</a></li>
+      <li><a href="#" class="text-brand-text pb-1 hover:border-b-2 hover:border-gradient-to-r hover:from-brand-primary hover:to-brand-secondary transition-all duration-300 ease-in-out hover:text-brand-primary">About</a></li>
+      <li><a href="#" class="text-brand-text pb-1 hover:border-b-2 hover:border-gradient-to-r hover:from-brand-primary hover:to-brand-secondary transition-all duration-300 ease-in-out hover:text-brand-primary">Services</a></li>
+      <li><a href="#" class="text-brand-text pb-1 hover:border-b-2 hover:border-gradient-to-r hover:from-brand-primary hover:to-brand-secondary transition-all duration-300 ease-in-out hover:text-brand-primary">Indicators</a></li>
+      <li><a href="#" class="text-brand-text pb-1 hover:border-b-2 hover:border-gradient-to-r hover:from-brand-primary hover:to-brand-secondary transition-all duration-300 ease-in-out hover:text-brand-primary">History</a></li>
+      <li><a href="#" class="text-brand-text pb-1 hover:border-b-2 hover:border-gradient-to-r hover:from-brand-primary hover:to-brand-secondary transition-all duration-300 ease-in-out hover:text-brand-primary">Science</a></li>
+      <li><a href="#" class="text-brand-text pb-1 hover:border-b-2 hover:border-gradient-to-r hover:from-brand-primary hover:to-brand-secondary transition-all duration-300 ease-in-out hover:text-brand-primary">Team</a></li>
+      <li><a href="#" class="text-brand-text pb-1 hover:border-b-2 hover:border-gradient-to-r hover:from-brand-primary hover:to-brand-secondary transition-all duration-300 ease-in-out hover:text-brand-primary">Portfolio</a></li>
     </ul>
   </div>
     <div class="flex items-center space-x-4">
-    <a href="" class="bg-[#252525] hover:bg-[#f4f4f4] border-1 border-[#252525] text-white hover:text-[#252525] font-bold py-2 px-6 rounded-full hover:bg-opacity-90 transition-colors">Get Started</a>
+    <a href="" class="group relative bg-gradient-to-r from-[#252525] to-gray-700 hover:from-brand-primary hover:to-brand-secondary text-white font-bold py-2 px-6 rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105">
+      <span class="relative z-10">Get Started</span>
+      <div class="absolute inset-0 rounded-full bg-gradient-to-r from-brand-primary to-brand-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    </a>
     </div>
   </nav>
 </header>
